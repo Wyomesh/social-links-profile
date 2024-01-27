@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.card {
+  min-width: 25vw;
+  display: grid;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  align-content: center;
+}
+.image {
+  display: grid;
+  justify-content: center;
+}
+.image img {
+  width: 130px;
+  border-radius: 50%;
+}
+.name {
+  padding-top: 1.5rem;
+}
+p {
+  font-size: 14px;
+}
+.address {
+  color: hsl(75, 94%, 57%);
+  padding: 0.5rem;
+}
+.skill {
+  padding: 1.3rem;
+}
+.cards {
+  display: grid;
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  background-color: hsl(0, 0%, 20%);
+  padding: 0.7rem 1rem;
+  display: grid;
+  width: 100%;
+  margin: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  justify-self: center;
+}
+.card1:hover,
+.card1:active,
+.card2:hover,
+.card2:active,
+.card3:hover,
+.card3:active,
+.card4:hover,
+.card4:active,
+.card5:hover,
+.card5:active {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 195px) {
+  .attribution {
+    display: none;
+  }
+  .card,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .skill,
+  .address,
+  .name,
+  .image {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
